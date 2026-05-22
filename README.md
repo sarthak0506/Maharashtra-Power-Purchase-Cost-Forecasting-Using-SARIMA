@@ -1,65 +1,123 @@
-# 🔌 Power Purchase Cost Forecasting for Maharashtra
+# ⚡ Maharashtra Power Purchase Cost Forecasting Using SARIMA
 
-This project involves forecasting the monthly **power purchase cost** for the state of **Maharashtra**, India, using time series modeling techniques. The goal is to assist in better energy budgeting and cost planning using historical data trends.
+## 📌 Project Overview
 
-## 📈 Project Overview
+This project focuses on forecasting the **Power Purchase Cost (PPC)** of Maharashtra using historical electricity cost data and Time Series Analysis. Accurate forecasting of power purchase costs helps energy providers and policymakers make informed decisions regarding budgeting, resource allocation, and future energy planning.
 
-- **Objective:** Predict future power purchase costs based on past consumption data.
-- **Data Source:** POSOCO (Power System Operation Corporation) — Maharashtra regional electricity data.
-- **Model Used:** SARIMA (Seasonal AutoRegressive Integrated Moving Average)
-- **Dashboard:** Built using Streamlit for interactive visualization of forecasts.
+The forecasting model is developed using the **SARIMA (Seasonal AutoRegressive Integrated Moving Average)** algorithm, which effectively captures both trend and seasonal patterns present in electricity cost data.
 
 ---
 
-## 🔧 Technologies Used
+## 🎯 Objectives
 
-- **Python**
-- **Pandas, NumPy**
-- **Matplotlib, Seaborn**
-- **statsmodels (SARIMA)**
-- **Streamlit** (for web app/dashboard)
+- Analyze historical power purchase cost data.
+- Identify seasonal and trend patterns.
+- Build a forecasting model using SARIMA.
+- Predict future power purchase costs.
+- Visualize historical and forecasted values through an interactive dashboard.
 
 ---
 
-## 🚀 Features
+## 🛠️ Technologies Used
 
-- Time series forecasting using SARIMA model
-- Data preprocessing and seasonal analysis
-- Evaluation using RMSE and visual validation
-- Interactive Streamlit dashboard to view future predictions and historical trends
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Statsmodels
+- Streamlit
+
+---
+
+## 📊 Methodology
+
+### 1. Data Collection
+- Historical power purchase cost data collected from Maharashtra electricity records.
+
+### 2. Data Preprocessing
+- Handling missing values
+- Date-time conversion
+- Data cleaning and transformation
+
+### 3. Exploratory Data Analysis (EDA)
+- Trend Analysis
+- Seasonal Pattern Analysis
+- Time Series Visualization
+
+### 4. Model Development
+- SARIMA Model Selection
+- Parameter Tuning
+- Model Training
+
+### 5. Forecasting
+- Future Power Purchase Cost Prediction
+- Confidence Interval Generation
+
+### 6. Evaluation
+- RMSE (Root Mean Squared Error)
+- Forecast Visualization
+
+---
+
+## 🏗️ Project Architecture
+
+![Project Architecture](images/architecture.png)
+
+---
+
+## ✨ Key Features
+
+- Historical Power Purchase Cost Analysis
+- Seasonal Trend Detection
+- SARIMA-Based Forecasting
+- Interactive Streamlit Dashboard
+- Future Cost Prediction Visualization
+- Model Performance Evaluation
 
 ---
 
 ## 📂 Project Structure
+
+```text
+Power-Purchase-Cost-Forecasting/
+│
 ├── data/
-│ └── maharashtra_power_cost.csv
-├── src/
-│ ├── preprocessing.py
-│ ├── modeling.py
-│ └── forecast.py
+│   └── power_purchase_cost.csv
+│
 ├── dashboard/
-│ └── app.py
+│   └── app.py
+│
+├── src/
+│   ├── preprocessing.py
+│   ├── modeling.py
+│   └── forecasting.py
+│
+├── images/
+│   ├── architecture.png
+│   ├── dashboard.png
+│   └── forecast.png
+│
+├── requirements.txt
 ├── README.md
-└── requirements.txt
+└── model.pkl
+```
 
 ---
 
-## 📊 Sample Visualizations
+## 📈 Results
 
-- Line plots of historical vs. predicted costs
-- Seasonal decomposition of the time series
-- Forecast charts with confidence intervals
+The SARIMA model successfully captured the seasonal and trend components of the power purchase cost data and generated reliable forecasts for future periods. The model demonstrated strong predictive performance and can assist in energy cost planning and decision-making.
 
 ---
 
-## ▶️ How to Run
+## 🔮 Future Enhancements
+- Integration with real-time electricity market data
+- Advanced forecasting using LSTM and Prophet models
+- Multi-state power cost comparison
+- Deployment on cloud platforms
+- Automated report generation
 
-1. **Clone the repo**
-```bash
-git clone https://github.com/your-username/maharashtra-power-cost-forecast.git
-cd maharashtra-power-cost-forecast
+---
 
-Create a virtual environment and install dependencies
-
-Run the Streamlit app
-streamlit run dashboard/app.py
+⭐ If you found this project useful, consider giving it a star on GitHub.
