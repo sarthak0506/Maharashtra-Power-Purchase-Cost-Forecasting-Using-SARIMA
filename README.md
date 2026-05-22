@@ -60,12 +60,6 @@ The forecasting model is developed using the **SARIMA (Seasonal AutoRegressive I
 
 ---
 
-## 🏗️ Project Architecture
-
-![Project Architecture](images/architecture.png)
-
----
-
 ## ✨ Key Features
 
 - Historical Power Purchase Cost Analysis
